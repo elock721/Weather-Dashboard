@@ -1,13 +1,10 @@
 
 .flexbox-item-1 {
-    background-color: navy!important;
-    /* background: transparent; */
     text-align: center;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    /* padding-bottom: 35px;
-    padding-top: 35px; */
+   
 }
 
 
@@ -40,4 +37,8 @@ h3 {
     flex-direction: row;
     display: flex;
 
+}
+
+.list-group-item {
+    cursor: pointer;
 }
