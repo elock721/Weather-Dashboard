@@ -16,11 +16,11 @@ All of the individual cities in the history table below the search bar also beco
 
 Psuedo Code
 
-When the user enters a citys and clicks search, the searchWeather function is connected to an API call from openweathermap.org that retrieves the city name, temperature (fahrenheit), humidity, and wind speed.  
+When the user enters a city and clicks search, the searchWeather function is connected to an API call from openweathermap.org that retrieves the city name, temperature (fahrenheit), humidity, and wind speed 
 
 The geUvIndex function below it is created specifically for the UV Index
 
-The fiveDay function is simultaneously to populate the 5 day forcast of the searched city complete with temperature (fahrenheit) and humidity as well as the date on top
+The fiveDay function will simultaneously populate the 5 day forcast of the searched city complete with temperature (fahrenheit) and humidity as well as the date on top
 
 All cards for the 5 day function are created with jQuery 
 

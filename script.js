@@ -31,13 +31,16 @@ function loadHistory() {
 // function to get city and weather information
 function searchWeather(searchText, savedSearch = false) {
     console.log(searchText)
+    var todaysDate = formatDate()
+    console.log(todaysDate)
     $.ajax({
         type: "GET",
         // API call for all city and weather info expect for UV index
         url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchText + "&appid=e62facd2394fa5ea9004691f3f101acd&units=imperial",
         dataType: "json",
         success: function (data) {
-            $("#current-city").text(data.name)
+            console.log(data)
+            $("#current-city").text(data.name + " " + todaysDate)
             $("#temp1").text(data.main.temp + " F")
             $("#hum1").text(data.main.humidity + "%")
             $("#wind1").text(data.wind.speed + " MPH")
@@ -55,6 +58,19 @@ function searchWeather(searchText, savedSearch = false) {
     })
 
 }
+
+// function to display date by city name when returning results 
+function formatDate() {
+
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+    return today 
+}
+
 // function to get UV index
 function getUvIndex(lat, long) {
     console.log(lat, long)
