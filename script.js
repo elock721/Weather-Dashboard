@@ -36,7 +36,7 @@ function searchWeather(searchText, savedSearch = false) {
     $.ajax({
         type: "GET",
         // API call for all city and weather info expect for UV index
-        url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchText + "&appid=e62facd2394fa5ea9004691f3f101acd&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchText + "&appid=e62facd2394fa5ea9004691f3f101acd&units=imperial",
         dataType: "json",
         success: function (data) {
             console.log(data)
@@ -77,7 +77,7 @@ function getUvIndex(lat, long) {
     $.ajax({
         type: "GET",
         // API call for UV index
-        url: "http://api.openweathermap.org/data/2.5/uvi/forecast?appid=e62facd2394fa5ea9004691f3f101acd&lat=" + lat + "&lon=" + long + "&cnt=1",
+        url: "https://api.openweathermap.org/data/2.5/uvi/forecast?appid=e62facd2394fa5ea9004691f3f101acd&lat=" + lat + "&lon=" + long + "&cnt=1",
         dataType: "json",
         success: function (data) {
             console.log(data[0].value)
@@ -93,7 +93,7 @@ function getUvIndex(lat, long) {
 function fiveDay(searchText) {
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/forecast?q= " + searchText + " &appid=e62facd2394fa5ea9004691f3f101acd&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q= " + searchText + " &appid=e62facd2394fa5ea9004691f3f101acd&units=imperial",
         dataType: "json",
         success: function (data) {
             console.log(data)
