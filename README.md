@@ -1,4 +1,4 @@
-Weather Dashboard Overview
+# Weather Dashboard Overview
 
 This weather dashboard application allows you to search for a city's current weather
 
@@ -14,7 +14,7 @@ All of the individual cities in the history table below the search bar also beco
 
 ------------------------------------------------
 
-Psuedo Code
+## Psuedo Code
 
 When the user enters a city and clicks search, the searchWeather function is connected to an API call from openweathermap.org that retrieves the city name, temperature (fahrenheit), humidity, and wind speed 
 
