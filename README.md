@@ -26,4 +26,7 @@ All cards for the 5 day function are created with jQuery
 
 The saveSearch function then logs it in local storage 
 
-And finally the populateSearch function adds the last city search query to the history below the search bar as a clickable shortcut for the city's weather
+And finally the populateSearch function adds the last city search query to the history below the search bar as a clickable shortcut for the city's weather 
+
+Email elock721@yahoo.com with questions 
+
