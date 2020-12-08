@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(".history").on("click", "li", function () {
         var city = $(this).text()
         searchWeather(city);
-        fiveDay(searchValue);
+        fiveDay(searchValue); 
     })
     loadHistory();
 
